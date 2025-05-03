@@ -1,0 +1,17 @@
+inputs:
+  repo_id:
+    description: "Repository ID on Hugging Face, the entry will be deployed at this place"
+    required: true
+  directory:
+    description: 'Directory to upload'
+    required: true
+  hf_token:
+    description: 'Hugging Face API token for authentication'
+    required: true
+  exception_list:
+    description: 'Comma-separated list of files to exclude from deletion (e.g., .gitattributes,README.md)'
+    required: false
+    default: ''
+runs:
+  using: "node20"
+  main: "dist/index.js"

@@ -1,0 +1,37 @@
+{
+    "name": "hf-space-deployer-action",
+    "version": "0.1.0",
+    "description": "Deploy project to a Hugging Face Space",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "ncc build src/main.ts -o dist --source-map --license LICENSE",
+        "lint": "npx eslint src/",
+        "format": "npx prettier src/ --check"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sondalex/hf-space-deployer-action.git"
+    },
+    "author": "sondalex",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sondalex/hf-space-deployer-action/issues"
+    },
+    "homepage": "https://github.com/sondalex/hf-space-deployer-action#readme",
+    "dependencies": {
+        "@actions/core": "^1.11.1",
+        "@huggingface/hub": "^1.1.2"
+    },
+    "devDependencies": {
+        "@actions/http-client": "^2.2.3",
+        "@eslint/js": "^9.23.0",
+        "@types/node": "^22.13.13",
+        "@vercel/ncc": "^0.38.3",
+        "eslint": "^9.23.0",
+        "eslint-config-prettier": "^10.1.1",
+        "prettier": "^3.5.3",
+        "typescript": "^5.8.2",
+        "typescript-eslint": "^8.28.0"
+    }
+}
