@@ -1,4 +1,4 @@
-# hf-space-deployer-action
+# hf-space-mirror-action
 
 GitHub action to ease deployment of project to a Hugging Face Space.
 
@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Deploy to HF Space
-        uses: sondalex/hf-space-deployer-action
+        uses: sondalex/hf-space-mirror-action
         with:
           directory: dist/
           repo_id: "username/repo"

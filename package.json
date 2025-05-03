@@ -1,5 +1,5 @@
 {
-    "name": "hf-space-deployer-action",
+    "name": "hf-space-mirror-action",
     "version": "0.1.0",
     "description": "Deploy project to a Hugging Face Space",
     "main": "dist/index.js",
@@ -11,14 +11,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sondalex/hf-space-deployer-action.git"
+        "url": "git+https://github.com/sondalex/hf-space-mirror-action.git"
     },
     "author": "sondalex",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/sondalex/hf-space-deployer-action/issues"
+        "url": "https://github.com/sondalex/hf-space-mirror-action/issues"
     },
-    "homepage": "https://github.com/sondalex/hf-space-deployer-action#readme",
+    "homepage": "https://github.com/sondalex/hf-space-mirror-action#readme",
     "dependencies": {
         "@actions/core": "^1.11.1",
         "@huggingface/hub": "^1.1.2"
